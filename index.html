@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-header">
+        <picture>
+          <source
+            media="(min-width:1440)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt="Header Image"
+            width="100%"
+          />
+        </picture>
+      </div>
+      <div class="card-content">
+        <div class="card-content-text">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </div>
+        <div class="card-content-stats">
+          <div>
+            <p class="stat">10k+</p>
+            <p class="label">companies</p>
+          </div>
+          <div>
+            <p class="stat">314</p>
+            <p class="label">templates</p>
+          </div>
+          <div>
+            <p class="stat">12m+</p>
+            <p class="label">queries</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-component-NwKqLUEmL"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Valeh Mustafayev</a>.
+    </div>
+  </body>
+</html>

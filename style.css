@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 65%, 61%);
+  --main-heading-stats: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-heading: hsla(0, 0%, 100%, 0.75);
+}
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--main-background);
+  padding: 0 1em;
+}
+.container {
+  margin: 0 auto;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.card-header {
+  position: relative;
+}
+.card-header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 98.5%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--accent);
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.card-header img {
+  height: 240px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-content {
+  text-align: center;
+  padding: 0 1em 1em 1em;
+}
+.card-content-text h1 {
+  color: var(--main-heading-stats);
+}
+.card-content-text p {
+  color: var(--main-paragraph);
+  padding: 0 1em;
+}
+.card-content-text h1 span {
+  color: var(--accent);
+}
+.card-content-stats {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lexend Deca", sans-serif;
+}
+.stat {
+  margin-bottom: 0.5em;
+  color: var(--main-heading-stats);
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.label {
+  margin: 0;
+  font-size: 12px;
+  color: var(--stat-heading);
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1110px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 0;
+  }
+  .card-header img {
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+  .card-header {
+    width: 100%;
+    position: relative;
+  }
+  .card-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--accent);
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+  .card-content {
+    width: 100%;
+    text-align: left;
+    padding: 2em 4em;
+  }
+  .card-content-text p {
+    padding: 0;
+  }
+  .card-content-stats {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 70px;
+  }
+  .card-content-stats div {
+    margin-right: auto;
+  }
+}
